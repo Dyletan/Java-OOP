@@ -1,0 +1,9 @@
+package task1;
+
+public abstract class Shape {
+	String name;
+	Shape() {};
+	abstract double volume();
+	abstract double surfaceArea();
+	
+}

@@ -1,0 +1,13 @@
+INDEX VERSION 1.134+C:\Users\Dyletant.BUGEXMACHINA\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
+2834915850.index
+916322217.index
+2768476762.index
+837825456.index
+478004876.index
+3633550981.index
+2945754643.index
+1696264553.index
+1259207542.index
+1007340512.index
+1190593318.index
+1865797976.index

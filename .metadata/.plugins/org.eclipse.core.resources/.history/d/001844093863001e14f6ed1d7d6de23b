@@ -1,0 +1,15 @@
+package task1;
+
+public abstract class Shape {
+	protected String name;
+	public Shape() {};
+	public Shape(String name){
+		this.name = name;
+	}
+	public abstract double volume();
+	public abstract double surfaceArea();
+	public String getName() {
+		return name;
+	}
+	public abstract String toString();
+}

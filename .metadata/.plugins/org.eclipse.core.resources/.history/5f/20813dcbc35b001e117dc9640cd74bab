@@ -1,0 +1,56 @@
+package Lab1;
+import java.util.Vector;
+// count = 2
+//BG B BG B BG GG
+
+public class DragonLunch {
+	Vector<Person> people;
+	{
+		people = new Vector<Person>();
+	}
+	public DragonLunch() {
+		
+	}
+	
+	public void kidnap(Person p) {
+		people.add(p);
+	}
+	
+	private int findFalse(boolean[] skip, int size) {
+		for(int i = 0; i < size; i++) {
+			if(!skip[i]) return i;
+		}
+		return -1;
+	}
+	
+	public boolean willDragonEatOrNot() {
+		int size = people.size();
+		boolean skip[] = new boolean[size];
+	    for (int i = 0; i < people.size() - 1; i++) {
+	    	// if BG
+	    	if(skip[i]) {
+	    		continue;
+	    	}
+	    	int moved = i+1;
+	    	while(moved <= size) {
+	    		if(moved == size) return true;
+	    		if(!skip[moved]) break;
+	    		moved++;
+	    	}
+	        if (people.get(i).getGender() == Gender.MALE && people.get(moved).getGender() == Gender.FEMALE) {
+	        	skip[i] = true;
+	        	skip[i+1] = true;
+	        	System.out.println("Deleted: " + i + " " + (i+1));
+	        	i = findFalse(skip, size) - 1;
+	        	if(i == -2) {
+	        		return false;
+	        	}
+	        }
+	    }
+	    if(findFalse(skip, size) == -1) return false;
+	    for(int i = 0; i < size; i++) {
+	    	if(!skip[i]) System.out.println(people.get(i));
+	    }
+	    return true;
+	}
+}

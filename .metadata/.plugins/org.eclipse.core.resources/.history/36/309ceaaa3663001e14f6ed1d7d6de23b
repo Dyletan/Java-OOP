@@ -1,0 +1,14 @@
+package task1;
+
+public abstract class Shape {
+	protected String name;
+	Shape() {};
+	Shape(String name){
+		this.name = name;
+	}
+	abstract double volume();
+	abstract double surfaceArea();
+	public String getName() {
+		return name;
+	}
+}

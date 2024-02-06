@@ -1,0 +1,21 @@
+package task1;
+
+public class Cylinder extends Shape{
+	double radius;
+	double height;
+	public Cylinder(){
+		
+	}
+	@Override
+	public double volume() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double surfaceArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}

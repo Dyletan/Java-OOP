@@ -1,0 +1,25 @@
+1703485453678	Rename package 'containers'
+1703485460684	Rename package 'container'
+1703485468613	Rename package 'data'
+1703485474738	Rename package 'dat'
+1703485508167	Rename package 'entities'
+1703485515698	Rename package 'entitie'
+1703485524218	Rename package 'messages'
+1703485529854	Rename package 'message'
+1703485680311	Delete element
+1703497263916	Delete element
+1703499301137	Move compilation unit
+1703501450254	Rename compilation unit 'StartSessionFactory.java'
+1703521310723	Delete element
+1703571129400	Delete element
+1703582898055	Encapsulate field 'faculty'
+1703590218723	Delete element
+1703590221896	Delete element
+1703602970142	Encapsulate field 'superviser'
+1703605070953	Delete element
+1703608163624	Encapsulate field 'title'
+1703612640253	Encapsulate field 'enrolledStudents'
+1703612766550	Encapsulate field 'registeredCourses'
+1703616082639	Delete element
+1703644669075	Encapsulate field 'coursesForRetake'
+1703649488038	Delete element

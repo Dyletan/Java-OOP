@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;task5.Cicuit.java&apos; to &apos;Circuit.java&apos;&#x0D;&#x0A;- Original project: &apos;Lab2&apos;&#x0D;&#x0A;- Original element: &apos;task5.Cicuit.java&apos;&#x0D;&#x0A;- Renamed element: &apos;task5.Circuit.java&apos;" description="Rename compilation unit &apos;Cicuit.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;task5{Cicuit.java" name="Circuit.java" references="false" stamp="1697894972520" version="1.0"/>
+</session>

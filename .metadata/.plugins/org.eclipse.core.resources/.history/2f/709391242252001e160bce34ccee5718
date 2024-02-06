@@ -1,0 +1,26 @@
+package Practice2.src;
+
+public class Student {
+	int id;
+	static int numOfStudents = 0;
+	String name;
+	int yearOfStudy;
+	Student(){
+		id = numOfStudents++;
+	}
+	Student(String name, int yearOfStudy){
+		this();
+		this.name = name;
+		this.yearOfStudy = yearOfStudy;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public int getId() {
+		return id;
+	}
+	public void incrementStudyYear() {
+		yearOfStudy++;
+	}
+}

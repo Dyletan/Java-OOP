@@ -1,0 +1,44 @@
+package Lab1;
+import Practice2.src.Student;
+import java.util.Scanner;
+
+public class TestGradeBook {
+	public static void main(String[] args) {
+		Course course = new Course("Art and Pottery", "course where we learn to apply principles of art in pottery", 5);
+		GradeBook book = new GradeBook(course);
+		Student A = new Student("A", 2023);
+		Student B = new Student("B", 2023);
+		Student C = new Student("C", 2022);
+		Student D = new Student("D", 2021);
+		Student E = new Student("E", 2022);
+		Student F = new Student("F", 2023);
+		Student G = new Student("G", 2021);
+		Student H = new Student("H", 2022);
+		Student I = new Student("I", 2023);
+		Student J = new Student("J", 2021);
+		System.out.println(course.getName());
+		book.addStudent(A);
+		book.addStudent(B);
+		book.addStudent(C);
+		book.addStudent(D);
+		book.addStudent(E);
+		book.addStudent(F);
+		book.addStudent(G);
+		book.addStudent(H);
+		book.addStudent(I);
+		book.addStudent(J);
+		
+		Scanner in = new Scanner(System.in);
+		int grade;
+		book.displayMessage();
+		for(Student student : book.students) {
+			do {
+				System.out.print("Student " + student.getName() + ": ");
+				grade = in.nextInt();
+			}while(grade<0 || grade > 100);
+			book.addGrade(student, grade);
+		}
+		
+		book.displayGradeReport();
+	}
+}
